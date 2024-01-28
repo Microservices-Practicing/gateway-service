@@ -77,6 +77,8 @@ spring:
     config:
 #      enabled: false
       uri: http://localhost:8888
+      username: user
+      password: secret
 
 resilience4j:
   circuitbreaker:
@@ -96,5 +98,6 @@ resilience4j:
 
 logging:
   level:
-    io.github.resilience4j: DEBUG
-    org.springframework.cloud.gateway: TRACE
+    org.springframework: TRACE
+#    io.github.resilience4j: DEBUG
+#    org.springframework.cloud.gateway: TRACE
